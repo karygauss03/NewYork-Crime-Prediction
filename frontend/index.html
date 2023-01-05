@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewYork Crime Prediction</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./resources/ol/ol.css">
+    <link rel="stylesheet" href="./resources/layerswitcher/ol-layerswitcher.css">
+  </head>
+  <body>
+    <div class="row m-0">
+      <div class="col-12 col-md-3 inputData">
+        <div class="title">
+          <div class="text-center">
+            <h1>Welcome to NewYork crime prediction application</h1>
+          </div>
+          <p>
+            <span
+              class="typed"
+              data-typed-items="This app is developed by engineering students @SUP'COM, Using this software you will be more secure in NewYork., All you need is to fill this form, Stay SAFE !"
+            ></span>
+          </p>
+        </div>
+        <form class="row g-3" id="form">
+          <div class="col-md-12">
+            <label for="inputAge" class="form-label">Age</label>
+            <input type="number" class="form-control" id="inputAge" required />
+          </div>
+          <div class="col-md-12">
+            <label for="inputSex" class="form-lable">Sex</label>
+            <select
+              name="sexSelection"
+              id="sexSelection"
+              class="form-select"
+              required
+            >
+              <option selected>Choose your sex</option>
+              <option value="M">Man</option>
+              <option value="F">Women</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label for="inputRace" class="form-lable">Race</label>
+            <select
+              name="raceSelection"
+              id="raceSelection"
+              class="form-select"
+              required
+            >
+              <option selected>Choose your race</option>
+              <option value="WHITE HISPANIC">White Hispanic</option>
+              <option value="BLACK HISPANIC">Black Hispanic</option>
+              <option value="BLACK">Black</option>
+              <option value="WHITE">White</option>
+              <option value="OTHER">Other</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label for="inputDateTime" class="form-label">Date and Time</label>
+            <input
+              type="datetime-local"
+              class="form-control"
+              id="inputDateTime"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputLongitude" class="form-label">Longitude</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputLongitude"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputLatitude" class="form-label">Latitude</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputLatitude"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <button class="btn btn-danger disabled" id="predict">Predict crime</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-md-9 map" id="map"></div>
+    </div>
+
+    <!--Bootstrap JS CDN-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/vendors/jquery/jquery.min.js"></script>
+    <script src="scripts/vendors/typed.js/typed.min.js"></script>
+    <script src="scripts/vendors/jquery.easing/jquery.easing.min.js"></script>
+    <script src="./resources/layerswitcher/ol-layerswitcher.js"></script>
+    <script src="./resources/ol/ol.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
