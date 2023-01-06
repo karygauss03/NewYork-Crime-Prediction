@@ -4,6 +4,15 @@
 
 </h1>
 
+<br>
+
+## Introduction
+Contrary to the general belief that crimes happen at night or dark, offenses or crimes are related to more complex conditioning. By observing patterns and trends in the occurrence of such events, we were assigned to predict the probability and type of crime that might occure based on various features (i.e., location, month, etc.) in **New York City**.
+
+Thus we present a simple web application to predict crime probability in New York City depending on user information, location and time.
+
+![alt text](https://github.com/karygauss03/NewYork-Crime-Prediction/blob/fe6d65d39080476d156c906fabeb1ef75b7eaa6a/images/321961885_570097244562516_7422643132171569741_n.png)
+
 ## Folder Structure 
     .
     ├── backend  
@@ -13,15 +22,6 @@
     │   └── Data_NY_Crimes_Explore.ipynb      #Exploratory Data Analysis
     ├── docs                                  #Paper
     └── README.md
-
-<br>
-
-## Introduction
-Contrary to the general belief that crimes happen at night or dark, offenses or crimes are related to more complex conditioning. By observing patterns and trends in the occurrence of such events, we were assigned to predict the probability and type of crime that might occure based on various features (i.e., location, month, etc.) in **New York City**.
-
-Thus we present a simple web application to predict crime probability in New York City depending on user information, location and time.
-
-![alt text](https://github.com/karygauss03/NewYork-Crime-Prediction/blob/fe6d65d39080476d156c906fabeb1ef75b7eaa6a/images/321961885_570097244562516_7422643132171569741_n.png)
 
 ## Dataset
 
